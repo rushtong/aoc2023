@@ -10,6 +10,10 @@ public class Game {
     return gameNumber;
   }
 
+  public Integer getPower() {
+    return getRedCubes() * getGreenCubes() * getBlueCubes();
+  }
+
   public void bumpCount(String color, Integer count) {
     switch (color) {
       case "red" -> {
